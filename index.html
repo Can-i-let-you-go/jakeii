@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CV Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Create Your CV</h2>
+
+    <form action="cv.php" method="POST" enctype="multipart/form-data">
+
+        <input type="text" name="fullname" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="phone" placeholder="Phone Number" required>
+
+        <textarea name="education" placeholder="Education"></textarea>
+        <textarea name="experience" placeholder="Job Experience"></textarea>
+
+        
+        <textarea name="skills"></textarea>
+
+        <label>Upload Photo</label>
+        <input type="file" name="photo" required>
+
+        <button type="submit">Generate CV</button>
+
+    </form>
+</div>
+
+</body>
+</html>
